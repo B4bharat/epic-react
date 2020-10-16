@@ -1,5 +1,5 @@
 <!-- Creating custom components -->
-<!-- http://localhost:3000/isolated/exercise/04.html -->
+<!-- http://localhost:3000/isolated/exercise/04.extra-1.html -->
 
 <body>
   <div id="root"></div>
@@ -12,17 +12,10 @@
 
     // 🐨 use that function in place of the divs below with:
     // 💰 {message({children: 'Hello World'})} {message({children: 'Goodbye World'})}
-    // const element = (
-    //   <div className="container">
-    //     <div> {message({children: 'Hello World'})}</div>
-    //     <div>{message({children: 'Goodbye World'})}</div>
-    //   </div>
-    // )
-    const HelloWorld = React.createElement(message, {children: 'Hello World'})
     const element = (
       <div className="container">
-        {React.createElement(message, {children: 'Hello World'})}
-        {React.createElement(message, {children: 'Goodbye World'})}
+        <div> {message({children: 'Hello World'})}</div>
+        <div>{message({children: 'Goodbyeee World'})}</div>
       </div>
     )
 
