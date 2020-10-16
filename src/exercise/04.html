@@ -21,8 +21,9 @@
     const HelloWorld = React.createElement(message, {children: 'Hello World'})
     const element = (
       <div className="container">
-        {React.createElement(message, {children: 'Hello World'})}
-        {React.createElement(message, {children: 'Goodbye World'})}
+        <message>Hello World</message>
+        <br />
+        <message>Goodbye World</message>
       </div>
     )
 
