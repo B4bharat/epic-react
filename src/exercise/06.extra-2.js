@@ -16,12 +16,13 @@ function UsernameForm({onSubmitUsername}) {
     onSubmitUsername(userInputVal.current.value)
   }
 
-  const [error, setError] = useState('')
+  const [error, setError] = useState(null)
 
   function handleChange(event) {
     const username = event.target.value
     const isValid = username === username.toLowerCase()
     setError(isValid ? null : 'username must be lowercase')
+    console.log(error)
   }
 
   return (
@@ -34,9 +35,6 @@ function UsernameForm({onSubmitUsername}) {
           type="text"
           onChange={handleChange}
         />
-      </div>
-      <div role="alert" style={{color: 'red'}}>
-        {error}
       </div>
       <button type="submit">Submit</button>
     </form>
