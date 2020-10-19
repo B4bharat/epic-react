@@ -37,6 +37,12 @@ const largeBox = (
   </div>
 )
 
+// const Box = props => (
+//   <div className={props.className} style={props.style}>
+//     {props.text}
+//   </div>
+// )
+
 function App() {
   return (
     <div>
