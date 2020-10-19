@@ -9,7 +9,7 @@ function UsernameForm({onSubmitUsername}) {
   // `event.preventDefault()` to prevent the default behavior of form submit
   // events (which refreshes the page).
   // Extra Credit -1: Using Refs
-  const userInputVal = useRef(null)
+  const userInputVal = useRef()
   function handleSubmit(event) {
     event.preventDefault()
     // onSubmitUsername(event.target.elements.usernameInput.value)
